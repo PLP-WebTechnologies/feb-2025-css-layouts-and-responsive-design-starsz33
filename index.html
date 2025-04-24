@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox & Grid Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">Esther's website</div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <h1>Welcome to Our Website</h1>
+            <p>This is a responsive layout using Flexbox and CSS Grid.</p>
+            
+            <div class="content-grid">
+                <div class="card">
+                    <h2>Service One</h2>
+                    <p>website development both backend and front end.</p>
+                </div>
+                <div class="card">
+                    <h2>Service Two</h2>
+                    <p>Mobile development with flutter and dart.</p>
+                </div>
+                <div class="card">
+                    <h2>Service Three</h2>
+                    <p>Printing And Irembo servises.</p>
+                </div>
+                <div class="card">
+                    <h2>Service Four</h2>
+                    <p>Internership Providing to secondary students.</p>
+                </div>
+                <div class="card">
+                    <h2>Service Five</h2>
+                    <p>Project completion and book Writting.</p>
+                </div>
+                <div class="card">
+                    <h2>Service Six</h2>
+                    <p>Photo Shoot video production ,businness card designing.</p>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
